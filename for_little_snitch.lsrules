@@ -1,7 +1,7 @@
 {
   "filter": {
     "whitelist": {
-      "name": "Allow Specific Domain for Any Application",
+      "name": "Allow Outgoing Connection to Specific Domain or IP's for Any Application",
       "rules": [
         {
           "action": "allow",
