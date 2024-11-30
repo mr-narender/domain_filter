@@ -1,37 +1,39 @@
 {
-  "filter": {
-    "whitelist": {
-      "name": "Allow Outgoing Connections to Specific Domains and IPs",
-      "rules": [
+    "name": "Whitelist [mr-naredner/whitelisted_hosts]",
+    "description": "Allow Outgoing Connections to Specific Domains and IPs",
+    "rules":
+    [
         {
-          "action": "allow",
-          "process": "any",
-          "direction": "out",
-          "remote": {
-            "address": [
-              "142.236.70.140",
-              "167.227.38.140",
-              "18.144.119.190"
-            ]
-          }
+            "action": "allow",
+            "process": "any",
+            "direction": "out",
+            "remote":
+            {
+                "address":
+                [
+                    "142.236.70.140",
+                    "167.227.38.140",
+                    "18.144.119.190"
+                ]
+            }
         },
         {
-          "action": "allow",
-          "process": "any",
-          "direction": "out",
-          "remote": {
-            "host": [
-              "jobbank.gc.ca",
-              "click.redditmail.com"
-            ]
-          }
+            "action": "allow",
+            "process": "any",
+            "direction": "out",
+            "remote":
+            {
+                "host":
+                [
+                    "jobbank.gc.ca",
+                    "click.redditmail.com"
+                ]
+            }
         },
         {
-          "action": "deny",
-          "process": "any",
-          "direction": "out"
+            "action": "deny",
+            "process": "any",
+            "direction": "out"
         }
-      ]
-    }
-  }
+    ]
 }
