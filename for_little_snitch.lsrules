@@ -10,19 +10,18 @@
                     "action": "allow",
                     "process": "any",
                     "direction": "out",
+                    "remote-addresses": "142.236.70.140,167.227.38.140,18.144.119.190",
                     "remote-domains":
                     [
                         "jobbank.gc.ca",
-                        "142.236.70.140",
-                        "167.227.38.140",
-                        "click.redditmail.com",
-                        "18.144.119.190"
+                        "click.redditmail.com"
                     ]
                 },
                 {
                     "action": "deny",
                     "process": "any",
                     "direction": "out",
+                    "remote-addresses": "",
                     "remote-domains":
                     []
                 }
