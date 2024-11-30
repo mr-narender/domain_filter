@@ -5,7 +5,7 @@
       "rules": [
         {
           "action": "allow",
-          "process": "any"
+          "process": "any",
           "direction": "out",
           "remote-hosts": [
           	"jobbank.gc.ca",
@@ -17,7 +17,7 @@
         },
         {
           "action": "deny",
-          "process": "any"
+          "process": "any",
           "direction": "out",
           "remote-hosts": []
         }
