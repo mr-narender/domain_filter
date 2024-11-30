@@ -7,7 +7,12 @@
             "action": "allow",
             "process": "any",
             "direction": "out",
-            "remote-addresses": "142.236.70.140,167.227.38.140,18.144.119.190"
+            "remote-addresses":
+            [
+                "142.236.70.140",
+                "167.227.38.140",
+                "18.144.119.190"
+            ]
         },
         {
             "action": "allow",
@@ -23,7 +28,7 @@
             "action": "deny",
             "process": "any",
             "direction": "out",
-            "remote-addresses": "",
+            "remote-addresses": [],
             "remote-domains":
             []
         }
