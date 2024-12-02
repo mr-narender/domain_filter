@@ -1,5 +1,5 @@
 {
-    "name": "Whitelist [mr-naredner/whitelisted_hosts]",
+    "name": "Whitelist [mr-narender/whitelisted_hosts]",
     "description": "Allow Outgoing Connections to Specific Domains and IPs",
     "rules":
     [
