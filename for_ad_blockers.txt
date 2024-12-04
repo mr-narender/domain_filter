@@ -3,6 +3,7 @@
 ||facebook.com^
 ||yandex.net^
 ||revenuecat.com^
+||weather-analytics-events.apple.com^
 @@||spotify.com^
 @@||spotifycdn.com^
 @@||audio-ak-spotify-com.akamaized.net^
