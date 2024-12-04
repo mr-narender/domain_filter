@@ -4,6 +4,7 @@
 ||yandex.net^
 ||revenuecat.com^
 ||weather-analytics-events.apple.com^
+||offerwall.yandex.net^
 @@||spotify.com^
 @@||spotifycdn.com^
 @@||audio-ak-spotify-com.akamaized.net^
