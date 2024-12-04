@@ -5,6 +5,7 @@
 ||revenuecat.com^
 ||weather-analytics-events.apple.com^
 ||offerwall.yandex.net^
+||an.facebook.com^
 @@||spotify.com^
 @@||spotifycdn.com^
 @@||audio-ak-spotify-com.akamaized.net^
