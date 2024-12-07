@@ -31,7 +31,12 @@
             "remote-addresses": [],
             "remote-domains":
             [
-                "affiliationjs.s3.amazonaws.com"
+                "affiliationjs.s3.amazonaws.com",
+                "analytics.facebook.com",
+                "ads.facebook.com",
+                "an.facebook.com",
+                "widgets.pinterest.com",
+                "business.samsungusa.com"
             ]
         }
     ]
