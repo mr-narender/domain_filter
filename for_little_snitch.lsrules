@@ -30,7 +30,9 @@
             "direction": "out",
             "remote-addresses": [],
             "remote-domains":
-            []
+            [
+                "affiliationjs.s3.amazonaws.com"
+            ]
         }
     ]
 }
