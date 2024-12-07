@@ -6,6 +6,7 @@
 ||weather-analytics-events.apple.com^
 ||offerwall.yandex.net^
 ||an.facebook.com^
+||affiliationjs.s3.amazonaws.com^
 @@||spotify.com^
 @@||spotifycdn.com^
 @@||audio-ak-spotify-com.akamaized.net^
