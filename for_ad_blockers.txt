@@ -7,6 +7,11 @@
 ||offerwall.yandex.net^
 ||an.facebook.com^
 ||affiliationjs.s3.amazonaws.com^
+||analytics.facebook.com^
+||ads.facebook.com^
+||an.facebook.com^
+||widgets.pinterest.com^
+||business.samsungusa.com^
 @@||spotify.com^
 @@||spotifycdn.com^
 @@||audio-ak-spotify-com.akamaized.net^
