@@ -13,3 +13,5 @@ an.facebook.com
 widgets.pinterest.com
 business.samsungusa.com
 analytics.google.com
+pagead2.googleadservices.com
+pagead2.googlesyndication.com
