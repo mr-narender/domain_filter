@@ -1,5 +1,4 @@
 ad.doubleclick.net
-adservice.google.com
 facebook.com
 yandex.net
 revenuecat.com
