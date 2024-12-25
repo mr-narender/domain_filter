@@ -40,6 +40,8 @@
                 "widgets.pinterest.com",
                 "business.samsungusa.com",
                 "analytics.google.com",
+                "pagead2.googleadservices.com",
+                "pagead2.googlesyndication.com",
                 "metrics.icloud.com"
             ]
         }
