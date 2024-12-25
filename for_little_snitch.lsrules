@@ -42,6 +42,7 @@
                 "analytics.google.com",
                 "pagead2.googleadservices.com",
                 "pagead2.googlesyndication.com",
+                "adservice.google.com",
                 "metrics.icloud.com"
             ]
         }
