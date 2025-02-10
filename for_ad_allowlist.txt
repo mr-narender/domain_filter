@@ -43,3 +43,5 @@ click.redditmail.com
 graph.facebook.com
 web.facebook.com
 csi.gstatic.com
+revanced.net
+s.youtube.com
