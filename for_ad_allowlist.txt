@@ -45,3 +45,6 @@ web.facebook.com
 csi.gstatic.com
 revanced.net
 s.youtube.com
+boo.dating
+xp.apple.com
+ib.isappcloud.com
