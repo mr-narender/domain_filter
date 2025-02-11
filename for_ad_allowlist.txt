@@ -1,4 +1,3 @@
-
 activated.win
 api.prod.boo.dating
 akamaized.net
