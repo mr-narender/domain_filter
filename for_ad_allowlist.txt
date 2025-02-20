@@ -6,6 +6,7 @@ azirevpn.net
 bell.ca
 boo-prod.b-cdn.net
 boo.dating
+boo-dating-prod.firebaseapp.com
 boo.world
 click.redditmail.com
 costco.ca
