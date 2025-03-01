@@ -8,6 +8,7 @@
 @@||boo-dating-prod.firebaseapp.com^
 @@||boo.world^
 @@||click.redditmail.com^
+@@||dice.com^
 @@||costco.ca^
 @@||costco.com^
 @@||csi.gstatic.com^
