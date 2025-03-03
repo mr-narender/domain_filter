@@ -17,6 +17,7 @@
 @@||eats.sng.link^
 @@||edge-chat.instagram.com^
 @@||email-link.adtidy.org^
+@@||icicibank.com^
 @@||events.gfe.nvidia.com^
 @@||firebaseapp.com^
 @@||firebaseinstallations.googleapis.com^
