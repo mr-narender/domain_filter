@@ -32,6 +32,7 @@
 @@||int.dewrain.site^
 @@||leanplum.com^
 @@||noip.com^
+@@||geolocation.onetrust.com^
 @@||one-disk.synology.me^
 @@||airtelxstream.in^
 @@||perimeterx.net^
