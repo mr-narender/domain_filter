@@ -33,6 +33,7 @@
 @@||leanplum.com^
 @@||noip.com^
 @@||geolocation.onetrust.com^
+@@||cloudflare.com^
 @@||one-disk.synology.me^
 @@||airtelxstream.in^
 @@||perimeterx.net^
