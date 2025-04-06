@@ -13,13 +13,7 @@
                 "142.236.70.140",
                 "167.227.38.140",
                 "18.144.119.190"
-            ]
-        },
-        {
-            "action": "allow",
-            "process": "any",
-            "direction": "out",
-            "priority": "high",
+            ],
             "remote-domains":
             [
                 "jobbank.gc.ca",
@@ -34,6 +28,7 @@
             "action": "deny",
             "process": "any",
             "direction": "out",
+            "priority": "high",
             "remote-addresses": [],
             "remote-domains":
             [
