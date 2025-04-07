@@ -13,8 +13,14 @@
                 "142.236.70.140",
                 "167.227.38.140",
                 "18.144.119.190"
-            ],
-            "remote-domains":
+            ]
+        },
+        {
+            "action": "allow",
+            "process": "any",
+            "direction": "out",
+            "priority": "high",
+            "remote-hosts":
             [
                 "jobbank.gc.ca",
                 "click.redditmail.com",
@@ -29,8 +35,7 @@
             "process": "any",
             "direction": "out",
             "priority": "high",
-            "remote-addresses": [],
-            "remote-domains":
+            "remote-hosts":
             [
                 "affiliationjs.s3.amazonaws.com",
                 "analytics.facebook.com",
