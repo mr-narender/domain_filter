@@ -27,6 +27,7 @@
 @@||googleapis.com^
 @@||graph.facebook.com^
 @@||graph.whatsapp.com^
+@@||hubspotlinks.com^
 @@||ib.isappcloud.com^
 @@||id.google.com^
 @@||instagram.com^
