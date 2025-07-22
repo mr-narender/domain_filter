@@ -5,6 +5,10 @@ on:
     - cron: '34 12 * * *'  # Runs daily at 12:34 UTC
   workflow_dispatch:
 
+permissions:
+  contents: write  # Required to create/update releases
+  packages: write  # Optional for completeness
+
 jobs:
   update-blocklist:
     runs-on: ubuntu-latest
