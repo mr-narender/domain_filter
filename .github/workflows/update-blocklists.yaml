@@ -2,8 +2,8 @@ name: Update Blocklist
 
 on:
   schedule:
-    - cron: '34 12 * * *'  # Runs every 12:34 hours at 00:00 UTC
-  workflow_dispatch:      # Allows manual triggering
+    - cron: '34 12 * * *'  # Runs daily at 12:34 UTC
+  workflow_dispatch:
 
 jobs:
   update-blocklist:
@@ -18,49 +18,11 @@ jobs:
         with:
           python-version: '3.x'
 
-      - name: Install requirements (if needed)
+      - name: Install requirements
         run: pip install requests
 
-      - name: Fetch, merge, deduplicate, and sort blocklist
-        run: |
-          URLS=(
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_1.txt"
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_10.txt"
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_11.txt"
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_12.txt"
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_18.txt"
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_23.txt"
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_3.txt"
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_30.txt"
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_31.txt"
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_33.txt"
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_4.txt"
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_42.txt"
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_50.txt"
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_53.txt"
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_57.txt"
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_59.txt"
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_7.txt"
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_8.txt"
-            "https://adguardteam.github.io/HostlistsRegistry/assets/filter_9.txt"
-            "https://badmojr.gitlab.io/1hosts/Pro/unbound.conf"
-            "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/unbound/dyndns.blacklist.conf"
-            "https://oooo.b-cdn.net/blahdns/blahdns_unbound.conf"
-            "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=unbound&showintro=0"
-            "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/ultimate.txt"
-            "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/ultimate.txt"
-            "https://raw.githubusercontent.com/mr-narender/domain_filter/refs/heads/main/for_ad_blocklist.txt"
-            "https://raw.githubusercontent.com/ph00lt0/blocklists/master/unbound-blocklist.txt"
-            "https://raw.githubusercontent.com/r0xd4n3t/pihole-adblock-lists/main/pihole_adlists.txt"
-          )
-
-          TMPFILE=$(mktemp)
-          for URL in "${URLS[@]}"; do
-            curl -fsSL "$URL" >> "$TMPFILE" || echo "Failed to fetch $URL"
-          done
-
-          sort -u "$TMPFILE" > blocklist.txt
-          rm "$TMPFILE"
+      - name: Run blocklist fetch + merge
+        run: python scripts/update_blocklist.py
 
       - name: Commit and push changes
         run: |
