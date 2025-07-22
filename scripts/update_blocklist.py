@@ -22,7 +22,6 @@ URLS = [
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_8.txt",
     "https://adguardteam.github.io/HostlistsRegistry/assets/filter_9.txt",
     "https://badmojr.gitlab.io/1hosts/Pro/unbound.conf",
-    "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/unbound/dyndns.blacklist.conf",
     "https://oooo.b-cdn.net/blahdns/blahdns_unbound.conf",
     "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=unbound&showintro=0",
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/rpz/ultimate.txt",
