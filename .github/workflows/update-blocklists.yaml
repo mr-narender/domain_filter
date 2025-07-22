@@ -24,15 +24,8 @@ jobs:
       - name: Run blocklist fetch + merge
         run: python scripts/update_blocklist.py
 
-      - name: Commit and push changes
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
-
-          if git diff --quiet blocklist.txt; then
-            echo "No changes in blocklist."
-          else
-            git add blocklist.txt
-            git commit -m "Update blocklist [auto]"
-            git push
-          fi
+      - name: Upload blocklist as artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: blocklist
+          path: blocklist.txt
