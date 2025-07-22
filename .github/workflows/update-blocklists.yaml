@@ -29,3 +29,22 @@ jobs:
         with:
           name: blocklist
           path: blocklist.txt
+
+      - name: Install GitHub CLI
+        run: |
+          sudo apt update
+          sudo apt install gh -y
+
+      - name: Create or update 'latest' release with blocklist.txt
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          TAG=latest
+          RELEASE_NAME="Latest Blocklist"
+          
+          # Create or update the 'latest' tag and release
+          if ! gh release view "$TAG" > /dev/null 2>&1; then
+            gh release create "$TAG" blocklist.txt --title "$RELEASE_NAME" --notes "Auto-updated blocklist"
+          else
+            gh release upload "$TAG" blocklist.txt --clobber
+          fi
