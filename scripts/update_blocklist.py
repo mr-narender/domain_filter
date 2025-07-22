@@ -25,6 +25,7 @@ URLS = [
     "https://cdn.jsdelivr.net/gh/hagezi/dns-blocklists@latest/unbound/dyndns.blacklist.conf",
     "https://oooo.b-cdn.net/blahdns/blahdns_unbound.conf",
     "https://pgl.yoyo.org/adservers/serverlist.php?hostformat=unbound&showintro=0",
+    "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/rpz/ultimate.txt",
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/adblock/ultimate.txt",
     "https://raw.githubusercontent.com/hagezi/dns-blocklists/main/wildcard/ultimate.txt",
     "https://raw.githubusercontent.com/mr-narender/domain_filter/refs/heads/main/for_ad_blocklist.txt",
